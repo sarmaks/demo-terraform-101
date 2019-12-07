@@ -1,9 +1,29 @@
-# Terraform Intro Demo
+# Overview
 
-Before and after code for a _Terraform Introduction_ class.
+HashiCorp's [demo-terraform-101](https://github.com/hashicorp/demo-terraform-101.git) used as starting point for this repo.
 
-## Branches
+This repo is used for labs in [tlz-workshop](https://tlz-workshop.tlzdemo.net/)
 
-See the `after` branch for the completed code from the class.
 
-See the `after-byoaws` branch for the completed code that can be run on a student's own AWS account (instead of on the instructor-created AWS account).
+
+
+##  Terraform for Individual Controbutors - Session 1 
+
+## Pre-requisites
+
+* terraform 0.11.14
+* AWS credentials
+
+**aws-tf-workshop-session-1** branch is used for this session.
+
+Topics covered in the Labs:
+
+* Creating resources
+* Using terraform console
+* Variables
+* Modules
+* Provisioners
+* Data sources
+* Graph
+* Metadata
+* Destroy
