@@ -8,8 +8,6 @@ variable "ingress_cidr" {
   description = "IP block from which connections to this instance will be made"
 }
 
-
-
 variable "region" {
   default = "us-west-2"
 }
