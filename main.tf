@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # provider "aws" {
 #   access_key = ""
 #   secret_key = ""
@@ -7,3 +8,23 @@
 # resource "aws_instance" "web" {
 #   # ...
 # }
+=======
+terraform {
+  required_version = ">= 0.12.0"
+}
+
+provider "aws" {
+}
+
+module "server" {
+  source = "./server"
+
+  num_webs     = var.num_webs
+  identity     = var.identity
+  ami          = var.ami
+  ingress_cidr = var.ingress_cidr
+  public_key   = var.public_key
+  private_key  = var.private_key
+}
+
+>>>>>>> aws-tf-workshop-session-1
