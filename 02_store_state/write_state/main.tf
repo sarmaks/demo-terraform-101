@@ -1,7 +1,7 @@
 # lab_2_terraform_cloud_demo/write_state/main.tf
 terraform {
   backend "remote" {
-    organization = "<ORGANIZATION NAME>"
+    organization = "intuit-demo"
 
     workspaces {
       name = "lab_2_write_state"
