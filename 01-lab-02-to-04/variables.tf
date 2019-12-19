@@ -11,3 +11,7 @@ variable "ingress_cidr" {
 variable "region" {
   default = "us-west-2"
 }
+
+variable "subnet_id" {
+  description = "subnet to place the ec2 instance"  
+}
