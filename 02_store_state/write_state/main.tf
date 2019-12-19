@@ -13,6 +13,10 @@ resource "random_pet" "password" {
   
 }
 
+resource "random_pet" "password2" {
+  
+}
+
 resource "random_id" "random" {
   keepers = {
     uuid = uuid()
@@ -27,5 +31,9 @@ output "random" {
 
 output "password" {
   value = random_pet.password.id
+}
+
+output "password2" {
+  value = random_pet.password2.id
 }
 
