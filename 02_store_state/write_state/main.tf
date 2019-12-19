@@ -9,6 +9,9 @@ terraform {
   }
 }
 
+resource "random_pet" "password" {
+  
+}
 
 resource "random_id" "random" {
   keepers = {
@@ -21,3 +24,8 @@ resource "random_id" "random" {
 output "random" {
   value = random_id.random.hex
 }
+
+output "password" {
+  value = random_pet.password.id
+}
+
